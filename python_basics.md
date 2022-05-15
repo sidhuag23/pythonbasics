@@ -157,3 +157,62 @@ You can control what to execute first by using parenthesis:
 You get 300 because first we get 3 from 1 + 2, and then we get 100 from 10**2 and finally 300 from 3 * 100.
 
 
+#### list and list slicing 
+```python
+address=["address",1,"Newyork",12]
+
+#check type of each list elements 
+type(address[1]) #output -> int
+
+#we can do mathematical operations which list value 
+address[1]*399/2
+
+#gets the last element if we use the [-1] -negative indexing 
+print(address[-2]); #output -> "Newyork" 
+print(address[-1]); #output -> 12
+
+#list slicing 
+
+#returns an another list with the values between list [1] to list  [3]
+address[1:3] #output -> [1, 'Newyork']
+
+#returns everything inside the list
+address[:] #output -> ['address', 1, 'Newyork', 12]
+
+#returns all elements starting form index postion [2] 
+address[2:] #output -> ['Newyork', 12]
+
+#returns all elements up to index position [3]
+address[:3] #output -> ['address', 1, 'Newyork']
+
+#slicing elements from backwards using negative indexing 
+address[:-1] #output -> ['address', 1, 'Newyork']
+
+address[:-2] #output -> ['address', 1]
+
+address[-3:-1] #output -> [1, 'Newyork']
+
+address[-3:] #output -> [1, 'Newyork', 12]
+
+address[-2:] #output -> ['Newyork', 12]
+
+```
+#### some build in list methods
+
+```python
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] 
+
+#.appends("element") adds an element to the list at the end 
+days.append("funday")
+print(days) #output -> ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'funday']
+
+#.removes("element") removes an element 
+days.remove("Mon")
+print(days) #output -> ['Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'funday']
+
+#to check the list of built in function/methods avialble for lists
+dir(list)
+
+dir(days)
+
+```
