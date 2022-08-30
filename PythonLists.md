@@ -268,6 +268,15 @@ print(y) #banana
 print(z) #output -> ['cherry', '213213', True]
 
 ```
+##### Multiply list
+```python 
+fruits = ["apple", "banana", "cherry"]
+myt = fruits * 2
+
+print(myt) #output -> ['apple', 'banana', 'cherry', 'apple', 'banana', 'cherry']
+
+```
+
 
 ##### list methods 
 https://www.w3schools.com/python/python_lists_methods.asp
