@@ -226,6 +226,38 @@ list2 = [1, 2, 3]
 list1.extend(list2)
 print(list1) #output -> ['a', 'b', 'c', 1, 2, 3]
 ```
+
+##### List comprehension 
+
+##### list comprehension
+```python 
+thisislist_x3 = ["apple3","bannana3","cherry3"]
+[print(x1)for x1 in thisislist_x3 ]
+```
+```output 
+apple3
+bannana3
+cherry3
+```
+```python 
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+print(newlist)  #output -> ['apple', 'banana', 'mango']
+```
+```python
+fruits1 = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist1 = [x.upper() for x in fruits1 if "e" in x]
+print(newlist1) #output -> ['APPLE', 'CHERRY']
+```
+```python
+Qw1=[i for i in range(10) if i > 5]
+print(Qw1) #output -> [6, 7, 8, 9]
+```
+
 ##### list methods 
 https://www.w3schools.com/python/python_lists_methods.asp
 ##### more about arrays     
