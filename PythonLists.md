@@ -257,6 +257,17 @@ print(newlist1) #output -> ['APPLE', 'CHERRY']
 Qw1=[i for i in range(10) if i > 5]
 print(Qw1) #output -> [6, 7, 8, 9]
 ```
+##### unpack values in list
+```python 
+fruits = ["apple", "banana", "cherry","213213",True]
+
+x, y, *z = fruits
+
+print(x) #apple
+print(y) #banana
+print(z) #output -> ['cherry', '213213', True]
+
+```
 
 ##### list methods 
 https://www.w3schools.com/python/python_lists_methods.asp
