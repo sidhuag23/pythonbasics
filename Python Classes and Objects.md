@@ -183,3 +183,26 @@ del ObjectName.age
 ```python
 del ObjectName 
 ```
+
+##### class and objects ex
+```python 
+
+class test:
+  def __init__(self,model,engine,brand,engineSize):
+    self.ModelName={
+    brand:model,
+    engine:engineSize
+    }
+
+  def printDetails(self):
+    for keyi , value in self.ModelName.items():
+      print(keyi+":"+str(value))
+
+Car1 = test("750LI","v12","BMW",4.4)
+Car1.printDetails()
+
+```
+```output
+BMW:750LI
+v12:4.4
+```
